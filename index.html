@@ -1,0 +1,532 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrindavan Public School | वृंदावन पब्लिक स्कूल - Chomu, Jaipur</title>
+    <meta name="description" content="Vrindavan Public School (VPS) - English Medium Co-Educational School, Nursery to XII, Rajasthan Board. Located in Chomu, Jaipur. Admission Open.">
+    <meta name="keywords" content="Vrindavan Public School, VPS Chomu, School in Chomu, Jaipur School, Rajasthan Board School, English Medium School, RBSE School">
+
+    <!-- Open Graph for WhatsApp/Social sharing -->
+    <meta property="og:title" content="Vrindavan Public School - Chomu, Jaipur">
+    <meta property="og:description" content="English Medium Co-Educational School | Nursery to XII | Rajasthan Board | Admission Open">
+    <meta property="og:image" content="images/admission.jpg">
+    <meta property="og:type" content="website">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Devanagari:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "EducationalOrganization",
+        "name": "Vrindavan Public School",
+        "alternateName": "VPS Chomu",
+        "description": "English Medium Co-Educational School, Nursery to XII, Rajasthan Board",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Behind Manglam City, Kacholiya",
+            "addressLocality": "Chomu",
+            "addressRegion": "Rajasthan",
+            "postalCode": "303704",
+            "addressCountry": "IN"
+        },
+        "telephone": ["+919829553298", "+919799017406", "+919784517651"],
+        "email": "vpschomu@gmail.com"
+    }
+    </script>
+</head>
+<body>
+
+    <!-- ===== TOP BAR ===== -->
+    <div class="top-bar">
+        <div class="container top-bar-inner">
+            <div class="top-bar-contact">
+                <a href="tel:+919829553298">&#9742; 9829553298</a>
+                <a href="mailto:vpschomu@gmail.com">&#9993; vpschomu@gmail.com</a>
+            </div>
+            <button class="lang-toggle" id="langToggle" onclick="toggleLanguage()">
+                <span data-lang="en">हिंदी</span>
+                <span data-lang="hi">English</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- ===== HEADER / NAV ===== -->
+    <header class="header" id="header">
+        <div class="container header-inner">
+            <div class="logo-area">
+                <div class="logo-icon">VPS</div>
+                <div class="logo-text">
+                    <h1>
+                        <span data-lang="en">Vrindavan Public School</span>
+                        <span data-lang="hi">वृंदावन पब्लिक स्कूल</span>
+                    </h1>
+                    <p class="tagline">
+                        <span data-lang="en">My School... My Identity...</span>
+                        <span data-lang="hi">मेरा विद्यालय... मेरी पहचान...</span>
+                    </p>
+                </div>
+            </div>
+            <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Toggle menu">
+                <span></span><span></span><span></span>
+            </button>
+            <nav class="nav" id="nav">
+                <a href="#home" onclick="closeMenu()">
+                    <span data-lang="en">Home</span><span data-lang="hi">होम</span>
+                </a>
+                <a href="#about" onclick="closeMenu()">
+                    <span data-lang="en">About</span><span data-lang="hi">परिचय</span>
+                </a>
+                <a href="#features" onclick="closeMenu()">
+                    <span data-lang="en">Features</span><span data-lang="hi">विशेषताएं</span>
+                </a>
+                <a href="#academics" onclick="closeMenu()">
+                    <span data-lang="en">Academics</span><span data-lang="hi">शिक्षा</span>
+                </a>
+                <a href="#results" onclick="closeMenu()">
+                    <span data-lang="en">Results</span><span data-lang="hi">परिणाम</span>
+                </a>
+                <a href="#gallery" onclick="closeMenu()">
+                    <span data-lang="en">Gallery</span><span data-lang="hi">गैलरी</span>
+                </a>
+                <a href="#contact" onclick="closeMenu()">
+                    <span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span>
+                </a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- ===== HERO BANNER ===== -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <h2>
+                <span data-lang="en">Welcome to Vrindavan Public School</span>
+                <span data-lang="hi">वृंदावन पब्लिक स्कूल में आपका स्वागत है</span>
+            </h2>
+            <p class="hero-sub">
+                <span data-lang="en">A World Class Campus with Unique Identity in English Medium Schooling</span>
+                <span data-lang="hi">अंग्रेजी माध्यम शिक्षा में अद्वितीय पहचान के साथ एक विश्वस्तरीय परिसर</span>
+            </p>
+            <p class="hero-location">
+                <span data-lang="en">Chomu, Jaipur &bull; Nursery to XII &bull; Rajasthan Board</span>
+                <span data-lang="hi">चौमूं, जयपुर &bull; नर्सरी से बारहवीं &bull; राजस्थान बोर्ड</span>
+            </p>
+            <a href="#contact" class="btn btn-primary">
+                <span data-lang="en">Admission Open &rarr;</span>
+                <span data-lang="hi">प्रवेश प्रारंभ &rarr;</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT US ===== -->
+    <section class="section about" id="about">
+        <div class="container">
+            <h2 class="section-title">
+                <span data-lang="en">About Us</span>
+                <span data-lang="hi">हमारे बारे में</span>
+            </h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <p>
+                        <span data-lang="en">
+                            <strong>Vrindavan Public School (VPS)</strong> is a premier English Medium Co-Educational School located in Chomu, Jaipur, Rajasthan. A unit of <strong>Vrindavan Career Institute</strong>, we provide quality education from <strong>Nursery to Class XII</strong> under the Rajasthan Board (RBSE).
+                        </span>
+                        <span data-lang="hi">
+                            <strong>वृंदावन पब्लिक स्कूल (VPS)</strong> चौमूं, जयपुर, राजस्थान में स्थित एक प्रमुख अंग्रेजी माध्यम सह-शिक्षा विद्यालय है। <strong>वृंदावन कैरियर इंस्टीट्यूट</strong> की एक इकाई, हम राजस्थान बोर्ड (RBSE) के तहत <strong>नर्सरी से कक्षा XII</strong> तक गुणवत्तापूर्ण शिक्षा प्रदान करते हैं।
+                        </span>
+                    </p>
+                    <p>
+                        <span data-lang="en">
+                            Our school is set up as per the <strong>New Education Policy (NEP)</strong> with world-class infrastructure, a disciplined environment, and a lush green campus. We focus on the holistic development of every child through a perfect blend of academics, sports, and extra-curricular activities.
+                        </span>
+                        <span data-lang="hi">
+                            हमारा विद्यालय <strong>नई शिक्षा नीति (NEP)</strong> के अनुसार विश्वस्तरीय बुनियादी ढांचे, अनुशासित वातावरण और हरे-भरे परिसर के साथ स्थापित है। हम शिक्षा, खेल और पाठ्येतर गतिविधियों के सही मिश्रण के माध्यम से हर बच्चे के सर्वांगीण विकास पर ध्यान केंद्रित करते हैं।
+                        </span>
+                    </p>
+                    <p>
+                        <span data-lang="en">
+                            Available in both <strong>English and Hindi medium</strong>, we cater to students from diverse backgrounds, nurturing them to achieve academic excellence and become responsible citizens.
+                        </span>
+                        <span data-lang="hi">
+                            <strong>अंग्रेजी और हिंदी दोनों माध्यम</strong> में उपलब्ध, हम विविध पृष्ठभूमि के छात्रों को शैक्षणिक उत्कृष्टता प्राप्त करने और जिम्मेदार नागरिक बनने के लिए प्रोत्साहित करते हैं।
+                        </span>
+                    </p>
+                </div>
+                <div class="about-highlights">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#127979;</div>
+                        <div>
+                            <strong>
+                                <span data-lang="en">Nursery to XII</span>
+                                <span data-lang="hi">नर्सरी से बारहवीं</span>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#128218;</div>
+                        <div>
+                            <strong>
+                                <span data-lang="en">Rajasthan Board (RBSE)</span>
+                                <span data-lang="hi">राजस्थान बोर्ड (RBSE)</span>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#129333;</div>
+                        <div>
+                            <strong>
+                                <span data-lang="en">Co-Educational</span>
+                                <span data-lang="hi">सह-शिक्षा</span>
+                            </strong>
+                        </div>
+                    </div>
+                    <div class="highlight-card">
+                        <div class="highlight-icon">&#127760;</div>
+                        <div>
+                            <strong>
+                                <span data-lang="en">English & Hindi Medium</span>
+                                <span data-lang="hi">अंग्रेजी एवं हिंदी माध्यम</span>
+                            </strong>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FEATURES ===== -->
+    <section class="section features-section" id="features">
+        <div class="container">
+            <h2 class="section-title">
+                <span data-lang="en">Salient Features</span>
+                <span data-lang="hi">प्रमुख विशेषताएं</span>
+            </h2>
+            <p class="section-subtitle">
+                <span data-lang="en">Which Makes Us Different...</span>
+                <span data-lang="hi">जो हमें अलग बनाती हैं...</span>
+            </p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">&#127963;</div>
+                    <h3><span data-lang="en">World Class Infrastructure</span><span data-lang="hi">विश्वस्तरीय बुनियादी ढांचा</span></h3>
+                    <p><span data-lang="en">Disciplined environment with modern facilities</span><span data-lang="hi">आधुनिक सुविधाओं के साथ अनुशासित वातावरण</span></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#10052;</div>
+                    <h3><span data-lang="en">Centrally Air-Cooled Campus</span><span data-lang="hi">केंद्रीय वातानुकूलित परिसर</span></h3>
+                    <p><span data-lang="en">Comfortable learning environment throughout the year</span><span data-lang="hi">पूरे वर्ष आरामदायक शिक्षण वातावरण</span></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128187;</div>
+                    <h3><span data-lang="en">Digital Classrooms</span><span data-lang="hi">डिजिटल कक्षाएं</span></h3>
+                    <p><span data-lang="en">Smart classrooms with modern teaching aids</span><span data-lang="hi">आधुनिक शिक्षण साधनों के साथ स्मार्ट कक्षाएं</span></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128421;</div>
+                    <h3><span data-lang="en">Coding Classes</span><span data-lang="hi">कोडिंग कक्षाएं</span></h3>
+                    <p><span data-lang="en">Future-ready coding and computer education</span><span data-lang="hi">भविष्य के लिए तैयार कोडिंग और कंप्यूटर शिक्षा</span></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127891;</div>
+                    <h3><span data-lang="en">NTSE & Olympiad Prep</span><span data-lang="hi">NTSE और ओलंपियाड तैयारी</span></h3>
+                    <p><span data-lang="en">Special classes for Spoken English, NTSE & Olympiad by expert faculty</span><span data-lang="hi">विशेषज्ञ शिक्षकों द्वारा स्पोकन इंग्लिश, NTSE और ओलंपियाड की विशेष कक्षाएं</span></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127795;</div>
+                    <h3><span data-lang="en">Safe & Green Campus</span><span data-lang="hi">सुरक्षित और हरा-भरा परिसर</span></h3>
+                    <p><span data-lang="en">Safe and secure lush green campus with CCTV surveillance</span><span data-lang="hi">CCTV निगरानी के साथ सुरक्षित और हरा-भरा परिसर</span></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127922;</div>
+                    <h3><span data-lang="en">Toy & Game Junction</span><span data-lang="hi">खिलौना एवं खेल जंक्शन</span></h3>
+                    <p><span data-lang="en">Separate play area for primary wing students</span><span data-lang="hi">प्राथमिक विंग के छात्रों के लिए अलग खेल क्षेत्र</span></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128218;</div>
+                    <h3><span data-lang="en">Digital & Conventional Library</span><span data-lang="hi">डिजिटल एवं पारंपरिक पुस्तकालय</span></h3>
+                    <p><span data-lang="en">Video library and well-stocked conventional library</span><span data-lang="hi">वीडियो लाइब्रेरी और समृद्ध पारंपरिक पुस्तकालय</span></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#127928;</div>
+                    <h3><span data-lang="en">Music, Dance, Art & Craft</span><span data-lang="hi">संगीत, नृत्य, कला एवं शिल्प</span></h3>
+                    <p><span data-lang="en">Creative and performing arts programs</span><span data-lang="hi">रचनात्मक और प्रदर्शन कला कार्यक्रम</span></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128101;</div>
+                    <h3><span data-lang="en">1:25 Teacher-Student Ratio</span><span data-lang="hi">1:25 शिक्षक-छात्र अनुपात</span></h3>
+                    <p><span data-lang="en">Personal care and attention for primary wing</span><span data-lang="hi">प्राथमिक विंग के लिए व्यक्तिगत देखभाल और ध्यान</span></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128293;</div>
+                    <h3><span data-lang="en">Fire Safety & RO Water</span><span data-lang="hi">अग्नि सुरक्षा और आरओ पानी</span></h3>
+                    <p><span data-lang="en">Complete fire safety system and RO water plant</span><span data-lang="hi">पूर्ण अग्नि सुरक्षा प्रणाली और आरओ वाटर प्लांट</span></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128241;</div>
+                    <h3><span data-lang="en">Student-Parent App</span><span data-lang="hi">छात्र-अभिभावक ऐप</span></h3>
+                    <p><span data-lang="en">Mobile app with all latest features for parents</span><span data-lang="hi">अभिभावकों के लिए सभी नवीनतम सुविधाओं के साथ मोबाइल ऐप</span></p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">&#128300;</div>
+                    <h3><span data-lang="en">Science & Computer Labs</span><span data-lang="hi">विज्ञान एवं कंप्यूटर लैब</span></h3>
+                    <p><span data-lang="en">Computer Lab, Chemistry Lab, Biology & Physics Lab</span><span data-lang="hi">कंप्यूटर लैब, रसायन विज्ञान लैब, जीव विज्ञान एवं भौतिकी लैब</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ACADEMICS ===== -->
+    <section class="section academics" id="academics">
+        <div class="container">
+            <h2 class="section-title">
+                <span data-lang="en">Academics</span>
+                <span data-lang="hi">शैक्षणिक</span>
+            </h2>
+            <div class="academics-grid">
+                <div class="academic-card">
+                    <div class="academic-icon">&#128118;</div>
+                    <h3><span data-lang="en">Pre-Primary Wing</span><span data-lang="hi">प्री-प्राइमरी विंग</span></h3>
+                    <p><span data-lang="en">Nursery, LKG & UKG with activity-based learning, separate toy & game junction</span><span data-lang="hi">नर्सरी, LKG और UKG गतिविधि-आधारित शिक्षण के साथ, अलग खिलौना और खेल जंक्शन</span></p>
+                </div>
+                <div class="academic-card">
+                    <div class="academic-icon">&#128214;</div>
+                    <h3><span data-lang="en">Primary Wing (I - V)</span><span data-lang="hi">प्राथमिक विंग (I - V)</span></h3>
+                    <p><span data-lang="en">Strong foundation in core subjects with 1:25 teacher-student ratio and personal attention</span><span data-lang="hi">1:25 शिक्षक-छात्र अनुपात और व्यक्तिगत ध्यान के साथ मुख्य विषयों में मजबूत नींव</span></p>
+                </div>
+                <div class="academic-card">
+                    <div class="academic-icon">&#128209;</div>
+                    <h3><span data-lang="en">Middle Wing (VI - VIII)</span><span data-lang="hi">माध्यमिक विंग (VI - VIII)</span></h3>
+                    <p><span data-lang="en">Comprehensive curriculum with NTSE, Olympiad preparation and spoken English classes</span><span data-lang="hi">NTSE, ओलंपियाड तैयारी और स्पोकन इंग्लिश कक्षाओं के साथ व्यापक पाठ्यक्रम</span></p>
+                </div>
+                <div class="academic-card">
+                    <div class="academic-icon">&#127942;</div>
+                    <h3><span data-lang="en">Secondary (IX - X)</span><span data-lang="hi">माध्यमिक (IX - X)</span></h3>
+                    <p><span data-lang="en">Board exam preparation under Rajasthan Board (RBSE) with expert faculty guidance</span><span data-lang="hi">विशेषज्ञ शिक्षकों के मार्गदर्शन में राजस्थान बोर्ड (RBSE) की बोर्ड परीक्षा तैयारी</span></p>
+                </div>
+                <div class="academic-card">
+                    <div class="academic-icon">&#128640;</div>
+                    <h3><span data-lang="en">Senior Secondary (XI - XII)</span><span data-lang="hi">उच्च माध्यमिक (XI - XII)</span></h3>
+                    <p><span data-lang="en">Science stream with dedicated labs and experienced faculty</span><span data-lang="hi">समर्पित प्रयोगशालाओं और अनुभवी शिक्षकों के साथ विज्ञान संकाय</span></p>
+                </div>
+                <div class="academic-card academic-card-highlight">
+                    <div class="academic-icon">&#11088;</div>
+                    <h3><span data-lang="en">Foundation Courses</span><span data-lang="hi">फाउंडेशन कोर्स</span></h3>
+                    <p><span data-lang="en">XI-XII Science Foundation, CLAT Foundation & CUET Foundation programs</span><span data-lang="hi">XI-XII विज्ञान फाउंडेशन, CLAT फाउंडेशन एवं CUET फाउंडेशन कार्यक्रम</span></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== RESULTS 2024 ===== -->
+    <section class="section results-section" id="results">
+        <div class="container">
+            <h2 class="section-title">
+                <span data-lang="en">Board Results 2024</span>
+                <span data-lang="hi">बोर्ड परिणाम 2024</span>
+            </h2>
+            <p class="section-subtitle">
+                <span data-lang="en">Our Students, Our Pride</span>
+                <span data-lang="hi">हमारे छात्र, हमारा गौरव</span>
+            </p>
+
+            <!-- X Board Results -->
+            <h3 class="results-heading">
+                <span data-lang="en">X Board Result 2024</span>
+                <span data-lang="hi">दसवीं बोर्ड परिणाम 2024</span>
+            </h3>
+            <div class="results-grid">
+                <div class="result-card gold">
+                    <div class="result-percent">96.00%</div>
+                    <div class="result-name">Yashu Choudhary</div>
+                </div>
+                <div class="result-card gold">
+                    <div class="result-percent">95.33%</div>
+                    <div class="result-name">Payal Sharma</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-percent">94.50%</div>
+                    <div class="result-name">Kajal Sharma</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-percent">94.50%</div>
+                    <div class="result-name">Kajal Sharma</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-percent">93.33%</div>
+                    <div class="result-name">Krishan Jat</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-percent">93.00%</div>
+                    <div class="result-name">Nikita Jat</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-percent">92.83%</div>
+                    <div class="result-name">Riddhima Choudhary</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-percent">92.17%</div>
+                    <div class="result-name">Ankit Sharma</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-percent">91.50%</div>
+                    <div class="result-name">Vikash Choudhary</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-percent">91.00%</div>
+                    <div class="result-name">Himanshi Bhawariya</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-percent">90.67%</div>
+                    <div class="result-name">Shivraj Jangid</div>
+                </div>
+                <div class="result-card">
+                    <div class="result-percent">90.67%</div>
+                    <div class="result-name">Yatin Yadav</div>
+                </div>
+            </div>
+
+            <!-- VIII Board Results -->
+            <h3 class="results-heading">
+                <span data-lang="en">VIII Board Result 2024 - A Grade Students</span>
+                <span data-lang="hi">आठवीं बोर्ड परिणाम 2024 - A ग्रेड छात्र</span>
+            </h3>
+            <div class="viii-results">
+                <div class="viii-names">
+                    Tanishka Yadav, Dipti Sharma, Priyanshi Yadav, Prince Nitharwal, Elesh Jangid, Abhay Gurjar, Vijay Raj Shyoran, Divya Yadav, Dhananjay Bagda, Priyanshi Bhawariya, Paridhi Choudhary, Sanjay Sharma, Akshay Choudhary, Raj Prajapat, Tamana Dagar, Suhana Meena, Garvit Sankhala, Ayush Bagda, Harsh Narwara, Surbhi Saini, Aaditya Choudhary, Aaditya Devenda
+                </div>
+            </div>
+
+            <!-- Results Image -->
+            <div class="results-image">
+                <img src="images/results.jpg" alt="VPS Board Results 2024" loading="lazy">
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== GALLERY ===== -->
+    <section class="section gallery" id="gallery">
+        <div class="container">
+            <h2 class="section-title">
+                <span data-lang="en">Gallery</span>
+                <span data-lang="hi">गैलरी</span>
+            </h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="images/admission.jpg" alt="Vrindavan Public School - Admission Open" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/results.jpg" alt="VPS Board Results 2024" loading="lazy">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/features.jpg" alt="VPS Salient Features" loading="lazy">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section class="section contact" id="contact">
+        <div class="container">
+            <h2 class="section-title">
+                <span data-lang="en">Contact Us</span>
+                <span data-lang="hi">संपर्क करें</span>
+            </h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128205;</div>
+                        <div>
+                            <h4><span data-lang="en">Address</span><span data-lang="hi">पता</span></h4>
+                            <p>
+                                <span data-lang="en">Behind Manglam City, Kacholiya,<br>Chomu, Ganesh Vihar,<br>Rajasthan 303704</span>
+                                <span data-lang="hi">मंगलम सिटी के पीछे, कछोलिया,<br>चौमूं, गणेश विहार,<br>राजस्थान 303704</span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">&#128222;</div>
+                        <div>
+                            <h4><span data-lang="en">Phone</span><span data-lang="hi">फोन</span></h4>
+                            <p>
+                                <a href="tel:+919829553298">9829553298</a><br>
+                                <a href="tel:+919799017406">9799017406</a><br>
+                                <a href="tel:+919784517651">9784517651</a>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">&#9993;</div>
+                        <div>
+                            <h4><span data-lang="en">Email</span><span data-lang="hi">ईमेल</span></h4>
+                            <p><a href="mailto:vpschomu@gmail.com">vpschomu@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3546.8!2d75.7!3d27.16!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x396dc5a1a4f2e26d%3A0x0!2sVrindavan+Public+School+Chomu!5e0!3m2!1sen!2sin!4v1"
+                        width="100%"
+                        height="350"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Vrindavan Public School Location">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer class="footer">
+        <div class="container footer-inner">
+            <div class="footer-col">
+                <h3>Vrindavan Public School</h3>
+                <p>
+                    <span data-lang="en">A unit of Vrindavan Career Institute<br>My School... My Identity...</span>
+                    <span data-lang="hi">वृंदावन कैरियर इंस्टीट्यूट की एक इकाई<br>मेरा विद्यालय... मेरी पहचान...</span>
+                </p>
+            </div>
+            <div class="footer-col">
+                <h4><span data-lang="en">Quick Links</span><span data-lang="hi">त्वरित लिंक</span></h4>
+                <a href="#home"><span data-lang="en">Home</span><span data-lang="hi">होम</span></a>
+                <a href="#about"><span data-lang="en">About</span><span data-lang="hi">परिचय</span></a>
+                <a href="#features"><span data-lang="en">Features</span><span data-lang="hi">विशेषताएं</span></a>
+                <a href="#results"><span data-lang="en">Results</span><span data-lang="hi">परिणाम</span></a>
+                <a href="#contact"><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span></a>
+            </div>
+            <div class="footer-col">
+                <h4><span data-lang="en">Contact</span><span data-lang="hi">संपर्क</span></h4>
+                <p>&#128222; 9829553298</p>
+                <p>&#9993; vpschomu@gmail.com</p>
+                <p>&#128205; Chomu, Jaipur, Rajasthan</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2024 Vrindavan Public School, Chomu.
+                    <span data-lang="en">All Rights Reserved.</span>
+                    <span data-lang="hi">सर्वाधिकार सुरक्षित।</span>
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- WhatsApp Floating Button -->
+    <a href="https://wa.me/919829553298" class="whatsapp-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
+        <svg viewBox="0 0 32 32" width="32" height="32" fill="#fff">
+            <path d="M16.004 0h-.008C7.174 0 0 7.176 0 16c0 3.5 1.128 6.744 3.046 9.378L1.054 31.29l6.118-1.958A15.908 15.908 0 0016.004 32C24.826 32 32 24.822 32 16S24.826 0 16.004 0zm9.31 22.594c-.39 1.1-1.932 2.014-3.164 2.28-.844.18-1.946.322-5.66-1.216-4.75-1.966-7.806-6.778-8.04-7.094-.226-.316-1.89-2.518-1.89-4.802s1.196-3.404 1.62-3.87c.39-.43.926-.644 1.432-.644.173 0 .328.008.468.016.424.018.636.042.916.712.348.836 1.198 2.916 1.3 3.13.104.214.204.498.066.796-.128.306-.24.442-.452.692-.214.248-.418.44-.63.71-.196.236-.416.49-.178.924.238.432 1.058 1.746 2.272 2.83 1.562 1.394 2.878 1.826 3.288 2.03.338.166.738.13.99-.144.318-.348.712-.924 1.112-1.494.286-.406.646-.458 1.016-.306.376.146 2.382 1.124 2.79 1.328.408.206.68.306.78.476.098.17.098.986-.292 2.086z"/>
+        </svg>
+    </a>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

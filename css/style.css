@@ -701,6 +701,49 @@ body.lang-hi [data-lang="hi"] {
     object-fit: cover;
 }
 
+/* ===== PREVIOUS RESULTS COLLAPSIBLE ===== */
+.results-previous {
+    margin-top: 40px;
+    border: 1px solid #e0e0e0;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.results-previous summary {
+    cursor: pointer;
+    padding: 16px 24px;
+    background: #e8eaf6;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #1a237e;
+    list-style: none;
+    text-align: center;
+}
+
+.results-previous summary::-webkit-details-marker {
+    display: none;
+}
+
+.results-previous summary::after {
+    content: ' ▸';
+}
+
+.results-previous[open] summary::after {
+    content: ' ▾';
+}
+
+.results-previous[open] summary {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.results-previous .results-heading {
+    margin-top: 24px;
+}
+
+.results-previous .results-grid {
+    padding: 0 16px;
+}
+
 /* ===== GALLERY ===== */
 .gallery-filters {
     display: flex;

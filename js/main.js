@@ -189,6 +189,100 @@ window.addEventListener('resize', function () {
     updateGalleryCarousel();
 });
 
+// ===== Celebration Photos Carousel =====
+var celebSlideIndex = 0;
+
+function getCelebItems() {
+    return Array.from(document.querySelectorAll('.celebration-photo'));
+}
+
+function getCelebPerView() {
+    if (window.innerWidth < 480) return 1;
+    if (window.innerWidth < 768) return 2;
+    return 3;
+}
+
+function getCelebMaxIndex() {
+    var items = getCelebItems();
+    var perView = getCelebPerView();
+    return Math.max(0, items.length - perView);
+}
+
+function updateCelebCarousel() {
+    var track = document.querySelector('.results-celebration-strip');
+    if (!track) return;
+    var items = getCelebItems();
+    if (items.length === 0) return;
+
+    var maxIndex = getCelebMaxIndex();
+    if (celebSlideIndex > maxIndex) celebSlideIndex = maxIndex;
+    if (celebSlideIndex < 0) celebSlideIndex = 0;
+
+    var itemWidth = items[0].offsetWidth + 16; // width + gap
+    var offset = celebSlideIndex * itemWidth;
+    track.style.transform = 'translateX(-' + offset + 'px)';
+
+    updateCelebDots();
+}
+
+function updateCelebDots() {
+    var dotsContainer = document.getElementById('celebDots');
+    if (!dotsContainer) return;
+    var items = getCelebItems();
+    var perView = getCelebPerView();
+    var totalDots = Math.ceil(items.length / perView);
+
+    dotsContainer.innerHTML = '';
+    for (var i = 0; i < totalDots; i++) {
+        var dot = document.createElement('button');
+        dot.className = 'celeb-dot' + (Math.floor(celebSlideIndex / perView) === i ? ' active' : '');
+        dot.setAttribute('aria-label', 'Go to celebration slide ' + (i + 1));
+        dot.setAttribute('data-index', i * perView);
+        dot.addEventListener('click', function () {
+            celebSlideIndex = parseInt(this.getAttribute('data-index'));
+            updateCelebCarousel();
+        });
+        dotsContainer.appendChild(dot);
+    }
+}
+
+var celebPrev = document.getElementById('celebPrev');
+var celebNext = document.getElementById('celebNext');
+if (celebPrev) {
+    celebPrev.addEventListener('click', function () {
+        celebSlideIndex = Math.max(0, celebSlideIndex - getCelebPerView());
+        updateCelebCarousel();
+    });
+}
+if (celebNext) {
+    celebNext.addEventListener('click', function () {
+        celebSlideIndex = Math.min(getCelebMaxIndex(), celebSlideIndex + getCelebPerView());
+        updateCelebCarousel();
+    });
+}
+
+// Initialize celebration carousel: seed dots on load + recalc when visible
+var celebSection = document.querySelector('.celebration-carousel-wrapper');
+if (celebSection) {
+    // Seed dots immediately so they're visible without scrolling
+    setTimeout(updateCelebCarousel, 50);
+    // Also recalc when section becomes visible (handles width-from-zero case)
+    var celebObserver = new IntersectionObserver(function (entries) {
+        entries.forEach(function (entry) {
+            if (entry.isIntersecting) {
+                setTimeout(updateCelebCarousel, 100);
+                celebObserver.unobserve(entry.target);
+            }
+        });
+    }, { threshold: 0.05 });
+    celebObserver.observe(celebSection);
+}
+
+// Recalculate celebration carousel on resize
+window.addEventListener('resize', function () {
+    updateCelebCarousel();
+});
+
 // ===== Lightbox =====
 var lightbox = document.getElementById('lightbox');
 var lightboxImg = document.getElementById('lightboxImg');

@@ -134,12 +134,25 @@ function updateGalleryCarousel() {
     if (gallerySlideIndex > maxIndex) gallerySlideIndex = maxIndex;
     if (gallerySlideIndex < 0) gallerySlideIndex = 0;
 
-    // Calculate offset based on item widths
-    var itemWidth = visibleItems[0].offsetWidth + 12; // width + margin
-    var offset = gallerySlideIndex * itemWidth;
+    // Use actual measured positions for pixel-perfect alignment
+    var first = visibleItems[0];
+    var second = visibleItems[1];
+    var step = second
+        ? (second.getBoundingClientRect().left - first.getBoundingClientRect().left)
+        : first.offsetWidth + 12;
+    var offset = Math.round(gallerySlideIndex * step);
     grid.style.transform = 'translateX(-' + offset + 'px)';
 
     updateGalleryDots();
+    updateCarouselArrows('gallery', gallerySlideIndex, maxIndex);
+}
+
+// Disable arrows when at either end
+function updateCarouselArrows(prefix, idx, maxIdx) {
+    var prev = document.getElementById(prefix === 'gallery' ? 'galleryPrev' : 'celebPrev');
+    var next = document.getElementById(prefix === 'gallery' ? 'galleryNext' : 'celebNext');
+    if (prev) prev.disabled = idx <= 0;
+    if (next) next.disabled = idx >= maxIdx;
 }
 
 function updateGalleryDots() {
@@ -218,11 +231,17 @@ function updateCelebCarousel() {
     if (celebSlideIndex > maxIndex) celebSlideIndex = maxIndex;
     if (celebSlideIndex < 0) celebSlideIndex = 0;
 
-    var itemWidth = items[0].offsetWidth + 16; // width + gap
-    var offset = celebSlideIndex * itemWidth;
+    // Use actual measured positions for pixel-perfect alignment
+    var first = items[0];
+    var second = items[1];
+    var step = second
+        ? (second.getBoundingClientRect().left - first.getBoundingClientRect().left)
+        : first.offsetWidth + 12;
+    var offset = Math.round(celebSlideIndex * step);
     track.style.transform = 'translateX(-' + offset + 'px)';
 
     updateCelebDots();
+    updateCarouselArrows('celeb', celebSlideIndex, maxIndex);
 }
 
 function updateCelebDots() {
